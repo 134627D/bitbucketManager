@@ -1,5 +1,5 @@
 import requests
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from config import BITBUCKET_USERNAME, BITBUCKET_APP_PASSWORD, REPO_OWNER, REPO_SLUG, DAYS_INACTIVE
 
