@@ -1,0 +1,14 @@
+# Logs
+logs
+*.log
+
+# dotenv environment variables file
+.env.*.local
+.env
+
+*.history
+*.DS_Store
+
+#vscode config
+.vscode/lanuch.json
+.vscode/settings.json
