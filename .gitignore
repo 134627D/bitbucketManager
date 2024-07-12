@@ -1,3 +1,5 @@
+# Dependency directories
+node_modules
 venv
 
 # Logs
@@ -14,3 +16,8 @@ logs
 #vscode config
 .vscode/lanuch.json
 .vscode/settings.json
+
+
+__pycache__
+
+.serverless

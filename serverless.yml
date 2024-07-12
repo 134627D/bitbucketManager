@@ -1,0 +1,32 @@
+service: bitbucket-inactive-branches
+
+provider:
+  name: aws
+  runtime: python3.8
+  region: us-east-1
+  iam:
+    role:
+      statements:
+        # msk
+        - Effect: Allow
+          Action:
+            - "*"
+          Resource:
+            - "*"
+
+functions:
+  main:
+    handler: handler.main
+    events:
+      - schedule: rate(5 days)
+
+plugins:
+  - serverless-python-requirements
+  - serverless-dotenv-plugin
+
+custom:
+  pythonRequirements:
+    dockerizePip: false
+  useDotenv: true
+
+variablesResolutionMode: 20210326
