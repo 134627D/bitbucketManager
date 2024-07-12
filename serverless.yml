@@ -4,6 +4,8 @@ provider:
   name: aws
   runtime: python3.8
   region: us-east-1
+  environment:
+    SNS_TOPIC_ARN: arn:aws:sns:us-east-1:371068544088:inactive-branches-notification
   iam:
     role:
       statements:
